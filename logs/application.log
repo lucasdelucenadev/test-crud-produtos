@@ -1,0 +1,909 @@
+2025-05-09 14:43:13 [main] INFO  c.e.t.TestCrudProdutosApplication - Starting TestCrudProdutosApplication using Java 17.0.12 with PID 25736 (C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes started by Lucas Lucena in C:\Users\Lucas Lucena\Desktop\test-crud-produtos)
+2025-05-09 14:43:13 [main] DEBUG c.e.t.TestCrudProdutosApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-05-09 14:43:13 [main] INFO  c.e.t.TestCrudProdutosApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 14:43:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 14:43:13 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-05-09 14:43:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-09 14:43:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-09 14:43:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-09 14:43:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-09 14:43:13 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 551 ms
+2025-05-09 14:43:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 14:43:13 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20d19f2c
+2025-05-09 14:43:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 14:43:13 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2025-05-09 14:43:13 [main] INFO  o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2025-05-09 14:43:13 [main] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classpath resources at 'classpath:db/callback' ...
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 ...
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Unable to resolve location classpath:db/callback.
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classpath resources at 'classpath:db/migration' ...
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 ...
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning URL: file:/C:/Users/Lucas%20Lucena/Desktop/test-crud-produtos/target/classes/db/migration
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.c.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes\
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.c.FileSystemClassPathLocationScanner - Scanning for resources in path: C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes\db\migration (db/migration)
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Found resource: db/migration/V1__create_produtos_table.sql
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Found resource: db/migration/V2__insert_initial_data.sql
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classes at classpath:db/migration
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.r.ResourceNameValidator - Validating V2__insert_initial_data.sql
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.r.ResourceNameValidator - Validating V1__create_produtos_table.sql
+2025-05-09 14:43:13 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/produtos_db (PostgreSQL 17.4)
+2025-05-09 14:43:13 [main] DEBUG org.flywaydb.core.FlywayExecutor - Driver: PostgreSQL JDBC Driver 42.6.1
+2025-05-09 14:43:13 [main] DEBUG org.flywaydb.core.FlywayExecutor - DDL Transactions Supported: true
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.SchemaHistoryFactory - Schemas: public
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.SchemaHistoryFactory - Default schema: null
+2025-05-09 14:43:13 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: PostgreSQL 17.4 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.c.SqlScriptCallbackFactory - Scanning for SQL callbacks ...
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.command.DbValidate - Validating migrations ...
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V2__insert_initial_data.sql (filename: V2__insert_initial_data.sql)
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V1__create_produtos_table.sql (filename: V1__create_produtos_table.sql)
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V2__insert_initial_data.sql (filename: V2__insert_initial_data.sql)
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V1__create_produtos_table.sql (filename: V1__create_produtos_table.sql)
+2025-05-09 14:43:13 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Schema history table "public"."flyway_schema_history" does not exist yet
+2025-05-09 14:43:13 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 2 migrations (execution time 00:00.008s)
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.command.DbSchemas - Skipping creation of existing schema: "public"
+2025-05-09 14:43:13 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "public"."flyway_schema_history" with baseline ...
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.parser.Parser - Parsing  ...
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.sqlscript.ParserSqlScript - Found statement at line 1: CREATE TABLE "public"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INTEGER,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT now(),
+    "execution_time" INTEGER NOT NULL,
+    "success" BOOLEAN NOT NULL
+)
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.sqlscript.ParserSqlScript - Found statement at line 13: INSERT INTO "public"."flyway_schema_history" ("installed_rank", "version", "description", "type", "script", "checksum", "installed_by", "execution_time", "success") VALUES (1, '1', '<< Flyway Baseline >>', 'BASELINE', '<< Flyway Baseline >>', NULL, 'postgres', 0, TRUE)
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.sqlscript.ParserSqlScript - Found statement at line 14: ALTER TABLE "public"."flyway_schema_history" ADD CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.sqlscript.ParserSqlScript - Found statement at line 15: CREATE INDEX "flyway_schema_history_s_idx" ON "public"."flyway_schema_history" ("success")
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - Executing SQL: CREATE TABLE "public"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INTEGER,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT now(),
+    "execution_time" INTEGER NOT NULL,
+    "success" BOOLEAN NOT NULL
+)
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - 0 rows affected
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - Executing SQL: INSERT INTO "public"."flyway_schema_history" ("installed_rank", "version", "description", "type", "script", "checksum", "installed_by", "execution_time", "success") VALUES (1, '1', '<< Flyway Baseline >>', 'BASELINE', '<< Flyway Baseline >>', NULL, 'postgres', 0, TRUE)
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - 1 row affected
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - Executing SQL: ALTER TABLE "public"."flyway_schema_history" ADD CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - 0 rows affected
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - Executing SQL: CREATE INDEX "flyway_schema_history_s_idx" ON "public"."flyway_schema_history" ("success")
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - 0 rows affected
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.JdbcTableSchemaHistory - Created Schema History table "public"."flyway_schema_history" with baseline
+2025-05-09 14:43:13 [main] INFO  o.f.core.internal.command.DbBaseline - Successfully baselined schema with version: 1
+2025-05-09 14:43:13 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 1
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.parser.Parser - Parsing V2__insert_initial_data.sql ...
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.sqlscript.ParserSqlScript - Found statement at line 2: -- Inserindo dados iniciais de exemplo
+INSERT INTO produtos (nome, descricao, responsavel, tipo, data_criacao)
+VALUES 
+    ('Notebook Dell XPS', 'Notebook Dell XPS 13 polegadas, 16GB RAM, 512GB SSD', 'João Silva', 'Eletrônicos', CURRENT_TIMESTAMP),
+    ('Monitor LG 27"', 'Monitor LG 27 polegadas, 4K, HDR', 'Maria Santos', 'Eletrônicos', CURRENT_TIMESTAMP),
+    ('Teclado Mecânico', 'Teclado mecânico RGB, switches blue', 'Pedro Oliveira', 'Periféricos', CURRENT_TIMESTAMP),
+    ('Mouse Gamer', 'Mouse gamer com 6 botões programáveis', 'Ana Costa', 'Periféricos', CURRENT_TIMESTAMP),
+    ('Headset Bluetooth', 'Headset Bluetooth com cancelamento de ruído', 'Carlos Lima', 'Áudio', CURRENT_TIMESTAMP)
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.command.DbMigrate - Starting migration of schema "public" to version "2 - insert initial data" ...
+2025-05-09 14:43:13 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "public" to version "2 - insert initial data"
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - Executing SQL: -- Inserindo dados iniciais de exemplo
+INSERT INTO produtos (nome, descricao, responsavel, tipo, data_criacao)
+VALUES 
+    ('Notebook Dell XPS', 'Notebook Dell XPS 13 polegadas, 16GB RAM, 512GB SSD', 'João Silva', 'Eletrônicos', CURRENT_TIMESTAMP),
+    ('Monitor LG 27"', 'Monitor LG 27 polegadas, 4K, HDR', 'Maria Santos', 'Eletrônicos', CURRENT_TIMESTAMP),
+    ('Teclado Mecânico', 'Teclado mecânico RGB, switches blue', 'Pedro Oliveira', 'Periféricos', CURRENT_TIMESTAMP),
+    ('Mouse Gamer', 'Mouse gamer com 6 botões programáveis', 'Ana Costa', 'Periféricos', CURRENT_TIMESTAMP),
+    ('Headset Bluetooth', 'Headset Bluetooth com cancelamento de ruído', 'Carlos Lima', 'Áudio', CURRENT_TIMESTAMP)
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.DefaultSqlScriptExecutor - 5 rows affected
+2025-05-09 14:43:13 [main] DEBUG o.f.core.internal.command.DbMigrate - Successfully completed migration of schema "public" to version "2 - insert initial data"
+2025-05-09 14:43:13 [main] DEBUG o.f.c.i.s.JdbcTableSchemaHistory - Schema History table "public"."flyway_schema_history" successfully updated to reflect changes
+2025-05-09 14:43:13 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 1 migration to schema "public", now at version v2 (execution time 00:00.002s)
+2025-05-09 14:43:13 [main] DEBUG org.flywaydb.core.FlywayExecutor - Memory usage: 36 of 284M
+2025-05-09 14:43:13 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 14:43:14 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 14:43:14 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 14:43:14 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 14:43:14 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09 14:43:14 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 14:43:14 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 14:43:14 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 14:43:14 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-05-09 14:43:14 [main] INFO  c.e.t.TestCrudProdutosApplication - Started TestCrudProdutosApplication in 1.922 seconds (process running for 2.071)
+2025-05-09 14:43:20 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-09 14:43:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-09 14:43:20 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-05-09 14:43:20 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:45:36 [main] INFO  c.e.t.TestCrudProdutosApplication - Starting TestCrudProdutosApplication using Java 17.0.12 with PID 35148 (C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes started by Lucas Lucena in C:\Users\Lucas Lucena\Desktop\test-crud-produtos)
+2025-05-09 14:45:36 [main] DEBUG c.e.t.TestCrudProdutosApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-05-09 14:45:36 [main] INFO  c.e.t.TestCrudProdutosApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 14:45:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 14:45:36 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interface.
+2025-05-09 14:45:36 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-09 14:45:36 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-09 14:45:36 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-09 14:45:36 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-09 14:45:36 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
+2025-05-09 14:45:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 14:45:37 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@521441d5
+2025-05-09 14:45:37 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 14:45:37 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2025-05-09 14:45:37 [main] INFO  o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2025-05-09 14:45:37 [main] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classpath resources at 'classpath:db/callback' ...
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 ...
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Unable to resolve location classpath:db/callback.
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classpath resources at 'classpath:db/migration' ...
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 ...
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning URL: file:/C:/Users/Lucas%20Lucena/Desktop/test-crud-produtos/target/classes/db/migration
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.c.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes\
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.c.FileSystemClassPathLocationScanner - Scanning for resources in path: C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes\db\migration (db/migration)
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Found resource: db/migration/V1__create_produtos_table.sql
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Found resource: db/migration/V2__insert_initial_data.sql
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classes at classpath:db/migration
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.r.ResourceNameValidator - Validating V2__insert_initial_data.sql
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.r.ResourceNameValidator - Validating V1__create_produtos_table.sql
+2025-05-09 14:45:37 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/produtos_db (PostgreSQL 17.4)
+2025-05-09 14:45:37 [main] DEBUG org.flywaydb.core.FlywayExecutor - Driver: PostgreSQL JDBC Driver 42.6.1
+2025-05-09 14:45:37 [main] DEBUG org.flywaydb.core.FlywayExecutor - DDL Transactions Supported: true
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.SchemaHistoryFactory - Schemas: public
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.s.SchemaHistoryFactory - Default schema: null
+2025-05-09 14:45:37 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: PostgreSQL 17.4 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+2025-05-09 14:45:37 [main] DEBUG o.f.c.i.c.SqlScriptCallbackFactory - Scanning for SQL callbacks ...
+2025-05-09 14:45:37 [main] DEBUG o.f.core.internal.command.DbValidate - Validating migrations ...
+2025-05-09 14:45:37 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V2__insert_initial_data.sql (filename: V2__insert_initial_data.sql)
+2025-05-09 14:45:37 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V1__create_produtos_table.sql (filename: V1__create_produtos_table.sql)
+2025-05-09 14:45:37 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V2__insert_initial_data.sql (filename: V2__insert_initial_data.sql)
+2025-05-09 14:45:37 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V1__create_produtos_table.sql (filename: V1__create_produtos_table.sql)
+2025-05-09 14:45:37 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.010s)
+2025-05-09 14:45:37 [main] DEBUG o.f.core.internal.command.DbSchemas - Skipping creation of existing schema: "public"
+2025-05-09 14:45:37 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+2025-05-09 14:45:37 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-09 14:45:37 [main] DEBUG org.flywaydb.core.FlywayExecutor - Memory usage: 36 of 284M
+2025-05-09 14:45:37 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 14:45:37 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 14:45:37 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 14:45:37 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 14:45:37 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09 14:45:37 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 14:45:37 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 14:45:37 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 14:45:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-05-09 14:45:38 [main] INFO  c.e.t.TestCrudProdutosApplication - Started TestCrudProdutosApplication in 1.877 seconds (process running for 2.033)
+2025-05-09 14:46:42 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-09 14:46:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-09 14:46:42 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-05-09 14:46:42 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:46:48 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:46:48 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    update
+        produtos 
+    set
+        tipo=?,
+        data_modificacao=?,
+        deleted=?,
+        descricao=?,
+        nome=?,
+        responsavel=? 
+    where
+        id=?
+2025-05-09 14:46:48 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:46:49 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:46:49 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    update
+        produtos 
+    set
+        tipo=?,
+        data_modificacao=?,
+        deleted=?,
+        descricao=?,
+        nome=?,
+        responsavel=? 
+    where
+        id=?
+2025-05-09 14:46:49 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:46:51 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:46:55 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:47:02 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:47:09 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:47:13 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:47:20 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:06 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:08 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:08 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:48:13 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        produtos
+        (tipo, data_criacao, data_modificacao, deleted, descricao, nome, responsavel) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2025-05-09 14:48:13 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:48:16 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:18 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:22 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:55 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:58 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:48:58 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    update
+        produtos 
+    set
+        tipo=?,
+        data_modificacao=?,
+        deleted=?,
+        descricao=?,
+        nome=?,
+        responsavel=? 
+    where
+        id=?
+2025-05-09 14:48:58 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:49:27 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 14:49:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-05-09 14:49:27 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-05-09 14:50:49 [main] INFO  c.e.t.TestCrudProdutosApplication - Starting TestCrudProdutosApplication using Java 17.0.12 with PID 29296 (C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes started by Lucas Lucena in C:\Users\Lucas Lucena\Desktop\test-crud-produtos)
+2025-05-09 14:50:49 [main] DEBUG c.e.t.TestCrudProdutosApplication - Running with Spring Boot v3.2.3, Spring v6.1.4
+2025-05-09 14:50:49 [main] INFO  c.e.t.TestCrudProdutosApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-09 14:50:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09 14:50:49 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 1 JPA repository interface.
+2025-05-09 14:50:49 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-05-09 14:50:49 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-09 14:50:49 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.19]
+2025-05-09 14:50:49 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-09 14:50:49 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 555 ms
+2025-05-09 14:50:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-05-09 14:50:49 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@373afd6c
+2025-05-09 14:50:49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-05-09 14:50:49 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 9.22.3 by Redgate
+2025-05-09 14:50:49 [main] INFO  o.f.c.i.license.VersionPrinter - See release notes here: https://rd.gt/416ObMi
+2025-05-09 14:50:49 [main] INFO  o.f.c.i.license.VersionPrinter - 
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classpath resources at 'classpath:db/callback' ...
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 ...
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Unable to resolve location classpath:db/callback.
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classpath resources at 'classpath:db/migration' ...
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@2a139a55 ...
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning URL: file:/C:/Users/Lucas%20Lucena/Desktop/test-crud-produtos/target/classes/db/migration
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.c.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes\
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.c.FileSystemClassPathLocationScanner - Scanning for resources in path: C:\Users\Lucas Lucena\Desktop\test-crud-produtos\target\classes\db\migration (db/migration)
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Found resource: db/migration/V1__create_produtos_table.sql
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Found resource: db/migration/V2__insert_initial_data.sql
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.classpath.ClassPathScanner - Scanning for classes at classpath:db/migration
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.r.ResourceNameValidator - Validating V2__insert_initial_data.sql
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.r.ResourceNameValidator - Validating V1__create_produtos_table.sql
+2025-05-09 14:50:49 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/produtos_db (PostgreSQL 17.4)
+2025-05-09 14:50:49 [main] DEBUG org.flywaydb.core.FlywayExecutor - Driver: PostgreSQL JDBC Driver 42.6.1
+2025-05-09 14:50:49 [main] DEBUG org.flywaydb.core.FlywayExecutor - DDL Transactions Supported: true
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.SchemaHistoryFactory - Schemas: public
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.s.SchemaHistoryFactory - Default schema: null
+2025-05-09 14:50:49 [main] WARN  o.f.c.i.database.base.Database - Flyway upgrade recommended: PostgreSQL 17.4 is newer than this version of Flyway and support has not been tested. The latest supported version of PostgreSQL is 15.
+2025-05-09 14:50:49 [main] DEBUG o.f.c.i.c.SqlScriptCallbackFactory - Scanning for SQL callbacks ...
+2025-05-09 14:50:49 [main] DEBUG o.f.core.internal.command.DbValidate - Validating migrations ...
+2025-05-09 14:50:49 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V2__insert_initial_data.sql (filename: V2__insert_initial_data.sql)
+2025-05-09 14:50:49 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V1__create_produtos_table.sql (filename: V1__create_produtos_table.sql)
+2025-05-09 14:50:49 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V2__insert_initial_data.sql (filename: V2__insert_initial_data.sql)
+2025-05-09 14:50:49 [main] DEBUG o.f.core.internal.scanner.Scanner - Filtering out resource: db/migration/V1__create_produtos_table.sql (filename: V1__create_produtos_table.sql)
+2025-05-09 14:50:49 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.011s)
+2025-05-09 14:50:49 [main] DEBUG o.f.core.internal.command.DbSchemas - Skipping creation of existing schema: "public"
+2025-05-09 14:50:49 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2
+2025-05-09 14:50:49 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2025-05-09 14:50:49 [main] DEBUG org.flywaydb.core.FlywayExecutor - Memory usage: 36 of 284M
+2025-05-09 14:50:49 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09 14:50:49 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-05-09 14:50:49 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-05-09 14:50:50 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09 14:50:50 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09 14:50:50 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09 14:50:50 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09 14:50:50 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09 14:50:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path ''
+2025-05-09 14:50:50 [main] INFO  c.e.t.TestCrudProdutosApplication - Started TestCrudProdutosApplication in 1.869 seconds (process running for 2.032)
+2025-05-09 14:51:01 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-09 14:51:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-09 14:51:01 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-05-09 14:51:01 [http-nio-8080-exec-1] DEBUG org.hibernate.SQL - 
+    insert 
+    into
+        produtos
+        (tipo, data_criacao, data_modificacao, deleted, descricao, nome, responsavel) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2025-05-09 14:51:01 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+        and not(p1_0.deleted) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:51:04 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:51:04 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+        and not(p1_0.deleted)
+2025-05-09 14:51:04 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    update
+        produtos 
+    set
+        tipo=?,
+        data_modificacao=?,
+        deleted=?,
+        descricao=?,
+        nome=?,
+        responsavel=? 
+    where
+        id=?
+2025-05-09 14:51:04 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+        and not(p1_0.deleted) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:51:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:51:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+        and not(p1_0.deleted)
+2025-05-09 14:51:10 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:51:14 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:51:14 [http-nio-8080-exec-9] DEBUG org.hibernate.SQL - 
+    update
+        produtos 
+    set
+        tipo=?,
+        data_modificacao=?,
+        deleted=?,
+        descricao=?,
+        nome=?,
+        responsavel=? 
+    where
+        id=?
+2025-05-09 14:51:14 [http-nio-8080-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+        and not(p1_0.deleted) 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-05-09 14:51:17 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        p1_0.id=? 
+        and (
+            p1_0.deleted = false
+        )
+2025-05-09 14:51:17 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        p1_0.id,
+        p1_0.tipo,
+        p1_0.data_criacao,
+        p1_0.data_modificacao,
+        p1_0.deleted,
+        p1_0.descricao,
+        p1_0.nome,
+        p1_0.responsavel 
+    from
+        produtos p1_0 
+    where
+        (
+            p1_0.deleted = false
+        ) 
+        and not(p1_0.deleted)
